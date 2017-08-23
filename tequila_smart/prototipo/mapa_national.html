@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    <title>Mapa interactiva | Tequila, Jalisco</title>
+    <meta name="description" content="Tequila, Jalisco " />
+    <meta name="keywords" content="Tequila Mexico viaje mapagu&iacute;a geoturistico" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="google-site-verification" content="lFJ3I9JxemEMTdHSUBV8qNSgDikEIqSq773PfDzRcfw" />
+        <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+    <script type="text/javascript" src="//use.typekit.net/afp5ypf.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <style>@font-face { font-family: 'geotourism2'; src: url('https://natgeotourism.com/web/common/live/assets/default/fonts/geotourism2.eot'); src: url('https://natgeotourism.com/web/common/live/assets/default/fonts/geotourism2.eot?#iefix') format('embedded-opentype'), url('https://natgeotourism.com/web/common/live/assets/default/fonts/geotourism2.woff') format('woff'), url('https://natgeotourism.com/web/common/live/assets/default/fonts/geotourism2.ttf') format('truetype'), url('https://natgeotourism.com/web/common/live/assets/default/fonts/geotourism2.svg#geotourism2') format('svg'); }</style>
+          
+        <link rel="stylesheet" href="https://natgeotourism.com/web/common/live/assets/default/css/common.min.css?v=1.7" />
+        <link rel="stylesheet" href="https://natgeotourism.com/web/common/live/assets/default/css/index.min.css?v=1.7" />
+      
+      
+              <link rel="stylesheet" href="https://js.arcgis.com/3.11/esri/css/esri.css" />
+                      <link rel="stylesheet" href="https://natgeotourism.com/web/common/live/assets/default/css/vendor/vex.css?v=1.7" />
+              <link rel="stylesheet" href="https://natgeotourism.com/web/common/live/assets/default/css/vendor/vex-custom.css?v=1.7" />
+                    <style>
+      
+      .header-bg, .button:hover, .node-nav .node.active { background: rgb(174, 68, 57); }
+      .footer-container { border-top: 5px solid rgb(174, 68, 57); }
+      a:hover, a.open, .link:hover, .submit:hover,
+      .language.active, .footer-container a:hover,
+      .bottom .partners .arrow, .main header .tabs a:hover,
+      #ideas .icon, #menus .list, body.detail header .featured { color: rgb(174, 68, 57); }
+      .node-nav .node, #ideas .section { border-color: rgb(174, 68, 57); }
+      .hover:hover { background: rgba(174, 68, 57, 0.89); }
+      .header-container .arrow { border-top: 15px solid rgb(174, 68, 57); }
+      body.index #esri-map path:hover { stroke: rgb(174, 68, 57); }
+      #points li.sort-dragging .tools { background: rgb(174, 68, 57); }
+      #points li.sort-dragging .handle .top { border-color: transparent transparent rgb(174, 68, 57) transparent; }
+      #points li.sort-dragging .handle .bottom { border-color: rgb(174, 68, 57) transparent transparent transparent; }
+
+      
+      a, .link, .submit, .main header .tabs a, .is-today .pika-button,
+      .bottom .partners .arrow:hover, .globe .pin, .curly-quote { color: rgb(116, 53, 47); }
+      .button, #esri-map .esriPopup .pointer.top, #esri-map .esriPopup .titlePane,
+      .vex.vex-custom .vex-dialog-button.vex-dialog-button-primary, .is-selected .pika-button { background: rgb(116, 53, 47); }
+      .triangle, .main .title i, .stylish-link i { border-color: transparent transparent rgb(116, 53, 47) transparent; }
+      body.index .main header { border-bottom-color: rgb(116, 53, 47); }
+      #ideas { border: 2px solid rgb(116, 53, 47); }
+      .button-light { border: 1px solid rgb(116, 53, 47); color: rgb(116, 53, 47); }
+
+      
+      .header-fg:hover, .header-fg.current, .header-fg.active, .color-dark { color: rgb(79, 26, 21); }
+
+      
+              [class*='theme-'] i { background: rgba(51, 51, 51, 0.5); }
+        [class*='theme-'].active i { background: rgba(51, 51, 51, 1); }
+                  .theme-teq257EA7EE15099EB2A i { background: rgba(50, 119, 144, 0.5); }
+          .theme-teq257EA7EE15099EB2A.active i { background: rgba(50, 119, 144, 1); }
+                  .theme-teqB2D2F346A5C0D4ACA i { background: rgba(182, 73, 82, 0.5); }
+          .theme-teqB2D2F346A5C0D4ACA.active i { background: rgba(182, 73, 82, 1); }
+                  .theme-teqDC6AEB3B296C02505 i { background: rgba(200, 107, 64, 0.5); }
+          .theme-teqDC6AEB3B296C02505.active i { background: rgba(200, 107, 64, 1); }
+                  .theme-teq4CB8E657ACEFDB745 i { background: rgba(181, 157, 106, 0.5); }
+          .theme-teq4CB8E657ACEFDB745.active i { background: rgba(181, 157, 106, 1); }
+                  .theme-teqE541F1BFF1D61B5F4 i { background: rgba(202, 176, 60, 0.5); }
+          .theme-teqE541F1BFF1D61B5F4.active i { background: rgba(202, 176, 60, 1); }
+                  .theme-teqDCF7D50BA2A2D9100 i { background: rgba(183, 215, 155, 0.5); }
+          .theme-teqDCF7D50BA2A2D9100.active i { background: rgba(183, 215, 155, 1); }
+                  .theme-teq490D44032BA36409D i { background: rgba(139, 211, 203, 0.5); }
+          .theme-teq490D44032BA36409D.active i { background: rgba(139, 211, 203, 1); }
+                  .theme-teq62939D94B6FD2D3D4 i { background: rgba(42, 168, 189, 0.5); }
+          .theme-teq62939D94B6FD2D3D4.active i { background: rgba(42, 168, 189, 1); }
+                  .theme-teqA58B7EAF81467D537 i { background: rgba(188, 141, 161, 0.5); }
+          .theme-teqA58B7EAF81467D537.active i { background: rgba(188, 141, 161, 1); }
+                  .theme-teq811B9D688FC6C4A01 i { background: rgba(160, 142, 53, 0.5); }
+          .theme-teq811B9D688FC6C4A01.active i { background: rgba(160, 142, 53, 1); }
+                  .theme-teqC98D5566F0216A384 i { background: rgba(139, 191, 95, 0.5); }
+          .theme-teqC98D5566F0216A384.active i { background: rgba(139, 191, 95, 1); }
+                  .theme-teqF7F45EE232E834CF3 i { background: rgba(91, 101, 69, 0.5); }
+          .theme-teqF7F45EE232E834CF3.active i { background: rgba(91, 101, 69, 1); }
+                  .theme-teq42397B522D9A05520 i { background: rgba(52, 73, 111, 0.5); }
+          .theme-teq42397B522D9A05520.active i { background: rgba(52, 73, 111, 1); }
+                    </style>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://natgeotourism.com/web/common/live/assets/default/js/vendor/modernizr-respond.min.js"></script>
+    		  <script>var dict = '{"group_places":"Lugares a Visitar","group_where":"D\u0026oacute;nde Alojarse","group_things":"Qu\u0026eacute; Hacer","hour":"hora","hours":"horas","hr":"hr","min":"min","day":"d\u00eda","days":"d\u00edas","length_units":"mi","log_in":"Ingresar","log_out":"Salir","my_trip_ideas":"Mis Ideas de Viaje","my_trip_plans":"Mis Planes de Viaje","trip_plan_manager":"Administrador del Planes de Viaje","add_to_trip_ideas":"Agregar a mis ideas de viaje","adding":"Agregando","removing":"Eliminando","added_to_trip_ideas":"Agregado a ideas de viaje!","add_to_trip_plan":"Agregar al plan de viaje","latest_contributions":"\u00daltimas contribuciones","404_page_title":"404 P\u00e1gina no encontrada","404_heading":"P\u00e1gina no encontrada","404_description":"Lo sentimos, no se encontr\u00f3 una p\u00e1gina en nuestro servidor que coincida con ese URL.","500_page_title":"Error","500_heading":"Se produjo un problema al proporcionar la p\u00e1gina solicitada.","500_description":"Pedimos disculpas. Ya hemos sido notificados sobre este problema.","500_link_text":"Ir a la p\u00e1gina de inicio","banner_tagline":"Una gu\u00eda de viaje de los lugares m\u00e1s respetados y recomendados por los residentes locales.","natgeo":"National Geographic","see_all":"Ver todos","default_portal_name":"Portal de Geoturismo","view_interactive_guide":"Clic Aqu\u00ed para Ver el Mapa Interactivo","about":"Acerce de","mapguide_supporters":"Qui\u0026eacute;nes apoyan el proyecto","trip_plans":"Planes de Viaje","search":"Buscar","more":"M\u00e1s","contact":"Contacto","follow_us":"S\u00edguenos","mapguides_on_the_go":"MapGuides mientras viajas","mobile_app":"Aplicaci\u00f3n m\u00f3vil","get_app":"Obt\u00e9n la aplicaci\u00f3n m\u00f3vil de esta regi\u00f3n","print_guide":"Imprimir gu\u00eda","get_printed_mapguide":"Obtener un MapGuide impreso por correo","nominate_place":"Nominar un lugar","my_account":"Mi cuenta","sign_up":"Registrarse","language":"Lengua","copyright":"\u0026copy; {year} Old Town Creative + Interactive. Todos los derechos reservados.","terms":"T\u00e9rminos","privacy_policy":"Pol\u00ed\u00adtica de privacidad","switch":"Cambiar","desktop_site":"Sitio Completo","mobile_site":"Sitio M\u00f3vil","promo_wide_text":"Descubre personas nuevas, lugares y experiencias aut\u00e9nticas en esta regi\u00f3n","featured_contributor":"Colaborador destacado","learn_more_about_contributor":"Saber m\u00e1ss sobre este colaborador","no_contributions_found":"No se encontraron colaboradores.","nominate_place_to_mapguide":"Nomina un lugar para el MapaGu\u00eda","help_tell_story":"Ay\u00fadanos a contar por qu\u00e9 este lugar es especial. \u00a1Ya estan abiertas las postulaciones!","start_nominating_here":"\u00a1Inicia una nominaci\u00f3n aqu\u00ed!","printed_mapguide":"MapGuide Impreso","edit_account_form_heading":"Edita o actualizar la cuenta","edit_account_form_subheading":"Edita tu informaci\u00f3n","edit_account_form_description":"Edita tu perfil para acceder a excelentes herramientas de planificaci\u00f3n de viajes y recibir informaci\u00f3n local actualizada.","mapguide_order_form_heading":"Solicitar un MapGuide impreso","mapguide_order_form_subheading":"Proporciona tu informaci\u00f3n","mapguide_order_form_description":"Proporciona tu nombre, correo electr\u00f3nico y direcci\u00f3n para que podamos enviarte un MapGuide impreso para esta regi\u00f3n.","create_account_page_title":"Ingresa o crea una cuenta","create_account_form_heading_default":"Nominar Lugares, Guardar Ideas de Viaje, Crear Planes de Viaje","create_account_form_subheading_default":"Crear una cuenta nueva","create_account_form_byline_default":"Registrarse para nominar lugares para el MapGuide, crear una lista de tus ideas favoritas de viaje, y convertir sus ideas en los planes de viaje.","create_account_form_description_default":"Si ya tienes una cuenta, ingresa como usuario que regresa ingresando la informaci\u00f3n a la derecha.","create_account_form_heading_subscribe":"Guardar mis ideas de viaje y mantenerme en contacto","create_account_form_byline_subscribe":"Reg\u00ed\u00adstrate a continuaci\u00f3n abajo para guardar tus ideas de viaje y mantenerte en contacto.","create_account_form_contributor_info":"Gracias por ser un colaborador! Al contribuir a este proyecto, permite a {link.orgs}estas organizaciones{\/link.orgs} utilizar el contenido que env\u00eda para las comunicaciones y la publicidad del sitio. Consulte {link.terms}los T\u00e9rminos{\/link.terms} de uso para obtener detalles completos.","first_name":"Nombre","last_name":"Apellido","email_address":"Correo electr\u00f3nico","confirm_email_address":"Confirmar correo electr\u00f3nico","create_your_password":"Crear contrase\u00f1a","password":"contrase\u00f1a","confirm_password":"Confirmar contrase\u00f1a","mailing_address":"Direcci\u00f3n postal","city_or_town":"Ciudad o pueblo","zip_or_postal_code":"C\u00f3digo postal","select_country":"Seleccionar pa\u00ed\u00ads","province_region_state":"Provincia\/Regi\u00f3n\/Estado","select_province_region_state":"Seleccionar Provincia\/Regi\u00f3n\/Estado","option_receive_email_newsletter":"Deseo recibir notificaciones por correo electr\u00f3nico.","mail_printed_mapguide":"Enviarme un MapGuide impreso por correo.","option_nominate_places":"Deseo nominar lugares para el MapGuide","option_nominate_places_description":"Si eres un residente local o tienes amplios conocimientos sobre la regi\u00f3n, te invitamos a proponer lugares, eventos o experiencias para incluir en este mapa.Es f\u00e1cil y divertido! Tu nominaci\u00f3n ser\u00e1 revisada por un editor. Podr\u00e1s revisar las pautas de postulaci\u00f3n cuando env\u00edes una nominaci\u00f3n.","whats_this":"Qu\u00e9 es esto?","add_address_contact_info":"Agregar direcci\u00f3n e informaci\u00f3n de contacto","my_interests":"Mis intereses","submit":"Enviar","change_your_password":"Cambiar la contrase\u00f1a","new_password":"Nueva Contrase\u00f1a","edit_address_contact_info":"Editar direcci\u00f3n e informaci\u00f3n de contacto","returning_user_login":"Ingreso de usuarios ya registrados","enter":"Ingresar","forgot_your_password":"Olvidaste la contrase\u00f1a?","request_new_password":"Solicitar una nueva contrase\u00f1a","request_new_password_description":"Ingresa el correo electr\u00f3nico de la cuenta y te enviaremos una nueva contrase\u00f1a.","request_password":"Solicitar contrase\u00f1a","welcome":"Bienvenido!","you_are_logged_in_as":"Ingresaste como","nomination_dashboard":"Tablero de postulaciones","password_reset_success":"Gracias! El recordatorio de contrase\u00f1a ha sido enviado.","account_creation_success":"Se ha creado tu nueva cuenta. Registr\u00e1ndote...","mapguide_order_success":"Gracias por tu pedido. El MapGuide llegar\u00e1 en 3 a 4 semanas.","edit_user_save_success":"Tus cambios se han guardado.","missing_form_fields_error":"Completa los campos que faltan en tu formulario.","missing_first_name_error":"Ingresa tu nombre.","missing_last_name_error":"Ingresa tu apellido.","unmatched_emails_error":"\u00a1Ups! Tus correos electr\u00f3nicos no coinciden.","incorrect_email_password_error":"Correo electr\u00f3nico o contrase\u00f1a incorrectos.","new_password_error":"Proporciona una nueva contrase\u00f1a.","password_length_error":"Por favor ingresa una contrase\u00f1a v\u00e1lida (8 caracteres como m\u00ednimo).","missing_mailing_address_error":"Proporciona tu direcci\u00c3\u00b3n postal.","missing_city_error":"Proporciona tu ciudad\/lugar de residencia.","missing_zip_code_error":"Proporciona tu c\u00f3digo postal.","missing_country_error":"Proporciona tu pa\u00ed\u00ads de residencia.","missing_region_error":"Proporciona tu provincia, regi\u00f3n o estado.","account_creation_existing_user_error":"Lo sentimos, ya tenemos una cuenta registrada con este correo electr\u00f3nico.","request_processing_error":"Lo sentimos, se produjo un problema mientras proces\u00e1bamos tu solicitud.","invalid_email_error":"Ingresa un correo electr\u00c3\u00b3nico v\u00e1lido.","account_not_found_error":"Lo sentimos, no pudimos encontrar una cuenta asociada con este correo electr\u00f3nico.","missing_email_error":"Ingresa el correo electr\u00f3nico de tu cuenta.","missing_password_error":"Ingresa la contrase\u00f1a de tu cuenta.","featured":"Destacado","edit":"Editar","show_more":"Ver m\u00e1s","learn_more":"Saber m\u00e1s","best_travel_advice":"Los mejores consejos de viaje provienen de las personas locales","go_to":"Ir a","filter":"Filtrar","legend":"Leyenda \u0026amp; Filtrar","filter_help":"Seleccione para a\u00f1adir o eliminar categor\u00edas:","clear_filters":"Limpiar filtros","update":"Actualizar","reset":"Reiniciar","order_by":"Clasificar por","newest":"M\u00e1s nuevo","most_popular":"M\u00e1s popular","most_relevant":"M\u00e1s relevante","distance_from_me":"Distancia de m\u00ed","distance_from_place":"Distancia del lugar","select_dates":"Seleccionar fechas","start_date":"Fecha inicial","end_date":"Fecha final","keyword_search_placeholder":"Buscar por palabra clave...","place_search_placeholder":"Buscar un lugar...","showing_results_for":"Se muestran resultados para","trip_idea":"Idea de viaje","trip_ideas":"Ideas de viaje","turn_into_plan":"Convertir en un plan de viaje","turn_into_plans":"Convertirlos en planes de viaje","trip_ideas_selection_instructions":"Selecciona los lugares que deseas agregar a tu plan de viaje.","select":"Seleccionar","cancel":"Cancelar","log_in_or_sign_up":"Ingresa o reg\u00ed\u00adstrate","to_turn_ideas_into_plans":"para convertir tus ideas en planes de viaje","to_save_ideas":"para guardar sus ideas de viaje","plan":"Plan","plans":"Planes","entry":"Entrada","entries":"Entradas","event":"Evento","events":"Eventos","gallery":"Galer\u00eda","featured_trip_plans":"Planes de viaje destacados","no_results_found":"Lo sentimos, no se encontraron resultados.","no_events_found":"Lo sentimos, no se encontraron eventos.","search_results":"Buscar resultados","interactive_guide":"Mapa interactiva","no_trip_ideas_saved":"A\u00fan no guardaste ninguna idea de viaje.","find_some":"Buscar algunas","no_trip_plans_saved":"A\u00fan no creaste planes de viaje.","get_started_trip_plans_1":"Para comenzar, visita nuestra","get_started_trip_plans_2":"p\u00e1gina de ideas de viaje","loading_trip_plan_editor":"Cargando editor de plan de viaje","creating_new_trip_plan":"Creando un plan de viaje nuevo","choose_or_create_plan":"Elige un plan existente o crea uno nuevo","new_trip_plan":"Nuevo plan de viaje","loading":"Cargando","of":"de","read_more":"Leer m\u00e1s","comments":"Comentarios","leave_a_comment":"Dejar un comentario","comment_form_text_placeholder":"Comentar aqu\u00ed\u00ad...","comment_form_name_placeholder":"Tu nombre...","tell_us_about_your_experience":"Cu\u00e9ntanos sobre tu experiencia","downloads":"Descargas","location":"Ubicaci\u00f3n","collapse":"Contraer","expand":"Ampliar","nearby":"Cercano","get_directions":"Obtener instrucciones","recommend_this":"Recomendar esto","edit_this_plan":"Editar este plan","contact_information":"Informaci\u00f3n de contacto","fax":"Fax","visit_website":"Visitar sitio web","overview":"Resumen","all":"Todo","refine":"Refinar","similar":"Similar","recommended":"Recomendado","trip_plan_details":"Detalles del plan de viaje","activities":"Actividades","duration":"Duraci\u00f3n","in_this_trip_plan":"En este plan de viaje","related":"Relacionado","comment_submission_name_error":"Ingresa tu nombre.","comment_submission_text_error":"Tu comentario debe tener al menos 8 caracteres.","comment_submission_success":"Tu comentario se envi\u00f3 para revisi\u00f3n. \u00a1Gracias!","share_this":"Compartir","trip_plan_directions":"Instrucciones del plan de viaje","total_distance":"Distancia total","total_time":"Tiempo total","print_directions":"Imprimir instrucciones","edit_title":"Editar t\u00edtulo","edit_description":"Editar descripci\u00f3n","editing":"Editando","refresh_map":"Actualizar mapa","optimize_trip":"Optimizar viaje","optimize":"Optimizar","optimize_trip_confirmation":"La optimizaci\u00f3n de tu plan de viaje actualizar\u00e1 el orden de los lugares para crear la ruta m\u00e1s corta y eficiente. Sin embargo, esta acci\u00f3n eliminar\u00e1 tus tareas del d\u00ed\u00ada. \u00bfDeseas continuar?","walking":"Caminando","driving":"En coche","overnight":"Por la noche","duplicate":"Duplicado","delete":"Borrar","okay":"OK","drag_places_here":"Arrastrar lugares aqu\u00ed","add_new_day":"Agregar un nuevo d\u00eda","view_this_plan":"Ver este plan","make_public":"Dar a conocer","delete_this_plan":"Borrar este plan","delete_plan_confirmation":"\u00bfEst\u00e1s seguro de que deseas borrar este plan de viaje?","deleting_trip_plan":"Borrando plan de viaje","back_to_trip_plans":"Volver a planes de viaje","plan_default_title":"T\u00ed\u00adtulo del plan de viaje","plan_default_intro":"Proporciona una breve descripci\u00f3n del plan de viaje...","plan_button_primary":"Guardar","plan_button_secondary":"Enviar para aprobaci\u00f3n","plan_button_loading":"Guardando","plan_options_primary":"Privado","plan_options_secondary":"P\u00fablico","plan_confirmation_private":"El plan de viaje se guard\u00f3 con \u00e9xito.","plan_confirmation_public":"Se ha enviado tu plan de viaje para la aprobaci\u00f3n del editor.","plan_confirmation_public_editor":"Se ha publicado tu plan de viaje.","updating_route":"Actualizando datos de la ruta","short_introduction":"Introducci\u00f3n breve","plan_point_note_field_label":"Agregar una nota breve sobre este lugar","plan_point_time_field_label":"\u00bfCu\u00e1nto tiempo?","plan_point_cover_image_label":"Imagen de portada","plan_point_cover_image_checkbox_label":"Guardar como imagen de portada de tu plan de viaje","plan_walking_directions_error":"Para preparar las instrucciones para llegar caminando, la distancia entre los puntos debe ser menor a 50 mi \/ 80 Km. Realiza las ediciones correspondientes o cambia al modo de c\u00f3mo llegar en coche y actualiza el mapa.","plan_unlocated_points_error":"Algunos de los lugares de tu plan de viaje no pueden ser reconocidos. Elimina estos lugares y actualiza el mapa.","plan_route_error":"Lo sentimos, no pudimos preparar una ruta para los lugares de este plan de viaje.","plan_day_time_error":"\u00a1Has planificado m\u00e1s de 24 horas de actividades para este d\u00ed\u00ada! Pasa algunas de estas actividades a otro d\u00eda.","plan_missing_title_error":"Ups. Parece que no ingresaste un t\u00ed\u00adtulo para este plan de viaje.","plan_missing_intro_error":"Ups. Parece que no proporcionaste una introducci\u00f3n para este plan de viaje.","plan_save_error":"Lo sentimos, se produjo un problema mientras se guardaba tu plan.","embed":"Embed","embeds":"Embeds","previewing":"Previsualizando","embed_manager":"Administrador del Embeds","embed_status_on":"Activado","embed_status_off":"Desactivado","embed_create":"Crear Nuevo Embed","embed_select_type":"Seleccione el tipo de embed que desea crear.","embed_none_created":"Ning\u00fan embed han sido creado a\u00fan.","embed_type_label":"Tipo de Embed","embed_type_title_gallery":"Galer\u00eda","embed_type_description_gallery":"El widget de la Galer\u00eda muestra todas las entradas de contenido en una selecci\u00f3n especificada de contenido destacado, en la forma de una presentaci\u00f3n de diapositivas interactiva y mapa-activada. El orden de las entradas de contenido es una funci\u00f3n de la hora de modificaci\u00f3n de las entradas, con la entrada modificada m\u00e1s recientemente en primer lugar.","embed_type_title_feed":"Feed","embed_type_description_feed":"Feed embeds presentan las entradas de contenido m\u00e1s recientemente editados en un formato de lista con im\u00e1genes y descripciones cortas.","embed_delete":"Eliminar Este Embed","embed_back":"Volver a Embeds","embed_saved":"Embed Guardado","embed_default_title":"Nuevo Embed","embed_default_description":"Descripci\u00f3n del embed...","embed_section_label_content":"Contenido","embed_section_label_appearance":"Apariencia","embed_field_label_title":"T\u00edtulo del Embed","embed_field_label_description":"Descripci\u00f3n del Embed","embed_field_label_domains":"Dominios de Host Permitidos","embed_field_label_language":"Idioma","embed_field_label_featured":"Selecci\u00f3n de Contenidos Destacados","embed_field_label_limit":"Recuento de Entradas","embed_field_label_text_color":"Color de Texto","embed_field_label_background_color":"Color de Fondo","embed_field_label_code":"C\u00f3digo Embed","embed_field_label_iframe":"C\u00f3digo Iframe","embed_field_help_domains":"Enumerar los sitios web o dominios en que el widget estar\u00e1 embedded (Por ejemplo: domain.com, *domain.com).","embed_field_help_language":"Elegir el idioma del contenido para publicar en este embed.","embed_field_help_featured":"Elegir qu\u00e9 selecci\u00f3n de contenidos destacados se mostrar\u00e1 en este embed.","embed_field_help_text_color":"El color (en formato hexadecimal) para mostrar la descripci\u00f3n del contenido. Los fuentes se hered\u00f3 de la hoja de estilo del sitio host.","embed_field_help_background_color":"El color (en formato hexadecimal) del fondo del embed.","embed_field_help_code":"Copie y pegue el siguiente c\u00f3digo en su HTML.","embed_field_help_iframe":"Si el c\u00f3digo de inserci\u00f3n est\u00e1ndar no est\u00e1 trabajando en su sitio web (portal), por favor, intente esta versi\u00f3n iframe en su lugar.","embed_button_text_save":"Guardar","embed_button_text_saved":"Guardado","embed_button_text_saving":"Guardando","embed_button_text_preview":"Previa Embed","embed_button_text_code":"C\u00f3digo del Embed","embed_button_text_close":"Cerrar","embed_dialog_text_confirm_deletion":"\u00bfEst\u00e1 seguro que desea eliminar este embed?","embed_dialog_text_creating":"Creando Embed","embed_dialog_text_deleting":"Eliminando Embed","embed_error_missing_domains":"Por favor proporcione una lista de dominios permitidos para este embed.","embed_error_404":"Lo sentimos, este contenido ha sido eliminado.","embed_error_disabled":"Lo sentimos, este contenido no est\u00e1 habilitado en este momento.","embed_error_generic":"Lo sentimos, este contenido no est\u00e1 disponible en este momento.","embed_tagline":"Los lugares m\u00e1s respetados y recomendados por los residentes locales.","embed_read_more":"Lee El Art\u00edculo Completo","regions":"Regiones","layers":"Capas","map":"Mapa","center_latitude":"Latitud centro","center_longitude":"Longitud centro","zoom_level":"Nivel de zoom","entire_map":"Mapa completo","latitude":"Latitud","longitude":"Longitud","elevation":"Elevaci\u00f3n","geolocation_unsupported_error":"Lo sentimos, su navegador no soporta funciones de geolocalizaci\u00f3n.","geolocation_permission_error":"Por favor, activa los servicios de ubicaci\u00f3n para encontrar cosas cerca.","geolocation_generic_error":"GPS disponible"}';</script>
+		  </head>
+  <body class="live index desktop mapguide" data-config="live" data-id="index" data-lang="es" data-api-url="https://natgeotourism.com/api/1.5/teq7HSz28An9MZWZ5bvb/">
+    <div id="container">
+      <!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+      <div class="header-container header-bg">
+        <div id="ideas" class="fade closed">
+          <div class="section section-top">
+            <a id="top-login" class="user-link sans" href="/user/account">Ingresar</a>          </div>
+          <a id="my-ideas" href="/ideas">
+            <i class="icon icon-tripidea"></i>
+            <span class="label fade sans">Mis Ideas de Viaje</span>
+          </a>
+          <div class="drawer">
+            <span id="idea-count" class="sans"></span>
+                      </div>
+        </div>
+        <header class="wrapper clearfix">
+                      <div class="banner clearfix">
+              <a class="natgeo-logo" href="http://www.nationalgeographic.com" target="_blank">
+                <span>National Geographic</span>
+              </a>
+              <div class="tagline ellipsis">Una gu&iacute;a de viaje de los lugares m&aacute;s respetados y recomendados por los residentes locales.</div>
+                          </div>
+                    <div class="left-right-wrapper clearfix">
+            <h1 id="logo">
+              <a href="/" class="header-fg">
+                                <span class="name">Tequila, Jalisco</span>
+                              </a>
+            </h1>
+            <div class="left">
+              <nav>
+                <ul>
+                  <li><a data-menu="places" href="/places" class="header-fg sans">Lugares a Visitar<span class="arrow"></span></a></li>
+                  <li><a data-menu="where" href="/where" class="header-fg sans">D&oacute;nde Alojarse<span class="arrow"></span></a></li>
+                  <li><a data-menu="things" href="/things" class="header-fg sans">Qu&eacute; Hacer<span class="arrow"></span></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right">
+              <nav>
+                <div title="Buscar" id="search-trigger" class="fade search-button header-fg"><span class="icon icon-search"></span></div>
+                <ul>
+                                                            <li><a data-menu="about" href="/info/acerca-de-la-regi-oacute-n/teq15ce938d72394571c" class="header-fg sans">Acerce de<span class="arrow"></span></a></li>
+                                                                                                                                                                                                                                    <li><a title="Voces Locales" href="/local-voices" class="header-fg sans">Voces Locales</a></li>
+                                                                          <li><a title="Planes de Viaje" href="/plans" class="header-fg first sans">Planes de Viaje</a></li>
+                                  </ul>
+              </nav>
+              <div id="top-search" class="top-search fade">
+                <input type="text" name="search" id="search" onfocus="search();" placeholder="Buscar&hellip;">
+              </div>
+            </div>
+          </div>
+          <div id="menus">
+  <div id="places" class="left container">
+	  <div class="inner">
+		  <h3>Lugares a Visitar</h3>
+	    <a class="see-all sans" href="/places">Ver todos <span class="icon icon-chevron-right"></span></a>
+	    <div class="list sans">
+		    		      <ul>
+  		      			        			          			              <li><a class="ellipsis" data-id="teqDC6AEB3B296C02505" href="/places/comunidad/teqDC6AEB3B296C02505"><i></i> Comunidad</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq490D44032BA36409D" href="/places/sitio-hist-oacute-rico-o-prehisp-aacute-nico/teq490D44032BA36409D"><i></i> Sitio Hist&oacute;rico o Prehisp&aacute;nico</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq62939D94B6FD2D3D4" href="/places/punto-de-inter-eacute-s-local/teq62939D94B6FD2D3D4"><i></i> Punto de Inter&eacute;s Local</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teqA58B7EAF81467D537" href="/places/museo-teatro-centro-de-interpretaci-oacute-n/teqA58B7EAF81467D537"><i></i> Museo, Teatro, Centro de Interpretaci&oacute;n</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq811B9D688FC6C4A01" href="/places/aacute-rea-natural/teq811B9D688FC6C4A01"><i></i> &Aacute;rea Natural</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq42397B522D9A05520" href="/places/operador-tur-iacute-stico/teq42397B522D9A05520"><i></i> Operador Tur&iacute;stico</a></li>
+			            			        			      		      </ul>
+		    	    </div>
+	    <div class="separator"></div>
+	    			  <div id="interactive-map" class="interactive-map fade clearfix">
+				  <a class="goto-map-button clearfix" href="/guide">
+						<span class="icon globe" style="background-position: -75px 0px">
+							<i class="icon pin icon-map-marker-1" style="top: 9px; left: 13px;"></i>
+						</span>
+						<span class="text sans">Clic Aquí para Ver el Mapa Interactivo</span>
+				  </a>
+			  </div>
+				  </div>
+  </div>
+  <div id="where" class="left container">
+	  <div class="inner">
+	    <h3>D&oacute;nde Alojarse</h3>
+	    <a class="see-all sans" href="/where">Ver todos <span class="icon icon-chevron-right"></span></a>
+	    <div class="list sans">
+	      		      <ul>
+			      			        			          			            
+			              			                <li><a class="ellipsis" data-id="teqA7C571269647C5299" href="/where/campamento/teqA7C571269647C5299"><i></i> Campamento</a></li>
+			              			                <li><a class="ellipsis" data-id="teq31DB71B907BA660DB" href="/where/hostal/teq31DB71B907BA660DB"><i></i> Hostal</a></li>
+			              			                <li><a class="ellipsis" data-id="teqD3F63319C42CA9FDC" href="/where/hotel/teqD3F63319C42CA9FDC"><i></i> Hotel</a></li>
+			              			            
+			            
+			          			        			      		      </ul>
+		    	    </div>
+	    <div class="separator"></div>
+	    			  <div id="interactive-map" class="interactive-map fade clearfix">
+				  <a class="goto-map-button clearfix" href="/guide">
+						<span class="icon globe" style="background-position: -75px 0px">
+							<i class="icon pin icon-map-marker-1" style="top: 9px; left: 13px;"></i>
+						</span>
+						<span class="text sans">Clic Aquí para Ver el Mapa Interactivo</span>
+				  </a>
+			  </div>
+				  </div>
+  </div>
+  <div id="things" class="left container">
+	  <div class="inner">
+	    <h3>Qu&eacute; Hacer</h3>
+	    <a class="see-all sans" href="/things">Ver todos <span class="icon icon-chevron-right"></span></a>
+	    <div class="list sans grid clearfix">
+		    		      <ul>
+  		      			        			          			              <li><a class="ellipsis" data-id="teqB2D2F346A5C0D4ACA" href="/things/oportunidades-para-acci-oacute-n/teqB2D2F346A5C0D4ACA"><i></i> Oportunidades Para Acci&oacute;n</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq4CB8E657ACEFDB745" href="/things/festival-o-fiesta/teq4CB8E657ACEFDB745"><i></i> Festival o Fiesta</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teqE541F1BFF1D61B5F4" href="/things/comida-o-bebida/teqE541F1BFF1D61B5F4"><i></i> Comida o Bebida</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teqDCF7D50BA2A2D9100" href="/things/salud-y-bienestar/teqDCF7D50BA2A2D9100"><i></i> Salud y Bienestar</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teqC98D5566F0216A384" href="/things/aventuras-rurales/teqC98D5566F0216A384"><i></i> Aventuras Rurales</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq62939D94B6FD2D3D4" href="/things/punto-de-inter-eacute-s-local/teq62939D94B6FD2D3D4"><i></i> Punto de Inter&eacute;s Local</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teqA58B7EAF81467D537" href="/things/museo-teatro-centro-de-interpretaci-oacute-n/teqA58B7EAF81467D537"><i></i> Museo, Teatro, Centro de Interpretaci&oacute;n</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teq811B9D688FC6C4A01" href="/things/aacute-rea-natural/teq811B9D688FC6C4A01"><i></i> &Aacute;rea Natural</a></li>
+			            			        			      			        			          			              <li><a class="ellipsis" data-id="teqF7F45EE232E834CF3" href="/things/cultura-del-tequila/teqF7F45EE232E834CF3"><i></i> Cultura del Tequila</a></li>
+			            			        			      		      </ul>
+		    	    </div>
+	    <div class="separator"></div>
+	    			  <div id="interactive-map" class="interactive-map fade clearfix">
+				  <a class="goto-map-button clearfix" href="/guide">
+						<span class="icon globe" style="background-position: -75px 0px">
+							<i class="icon pin icon-map-marker-1" style="top: 9px; left: 13px;"></i>
+						</span>
+						<span class="text sans">Clic Aquí para Ver el Mapa Interactivo</span>
+				  </a>
+			  </div>
+				  </div>
+  </div>
+  <div id="about" class="right container">
+	  <div class="inner">
+	    <h3>Acerce de</h3>
+	    <div class="list sans">
+	      <ul>
+		      			      			        		        	  <li><a href="/info/acerca-de-la-regi-oacute-n/teq15ce938d72394571c"><i></i> Acerca de la Regi&oacute;n</a></li>
+              			      			        		        	  <li><a href="/info/acerca-del-geoturismo/teq46e4f7b8a415253a6"><i></i> Acerca del Geoturismo</a></li>
+              			      			        		        	  <li><a href="/info/sobre-el-programa-de-geoturismo-nbsp-tequila-esp-iacute-ritu-de-m-eacute-xico/teq27d8d52062e027fc5"><i></i> Sobre el Programa de Geoturismo &nbsp;Tequila, Esp&iacute;ritu de M&eacute;xico</a></li>
+              			      			        		        	  <li><a href="/supporters"><i></i> Qui&eacute;nes apoyan el proyecto</a></li>
+              			      			        		        	  <li><a href="/info/el-arte-del-tequila/teqc20fcf2778280841e"><i></i> El Arte del Tequila</a></li>
+              			      		      	      </ul>
+	    </div>
+	    <div class="separator"></div>
+	    			  <div id="interactive-map" class="interactive-map fade clearfix">
+				  <a class="goto-map-button clearfix" href="/guide">
+						<span class="icon globe" style="background-position: -75px 0px">
+							<i class="icon pin icon-map-marker-1" style="top: 9px; left: 13px;"></i>
+						</span>
+						<span class="text sans">Clic Aquí para Ver el Mapa Interactivo</span>
+				  </a>
+			  </div>
+				  </div>
+  </div>
+</div>
+        </header>
+      </div>
+<div class="main-container">
+	<div class="main wrapper clearfix">
+    <header class="clearfix">
+	    <div class="title">
+    		<h2>Mapa interactiva</h2>
+    		    			<div id="entry-count">
+      			<span>109</span>
+      			      			          			         Entradas                                      		</div>
+    		    		    		    		    		        	    </div>
+	    	      
+  	    	<div class="tabs">
+  		    	<div id="tab-gallery" class="tab gallery fade link sans">
+              <i class="icon icon-list-bullet-2"></i> Galer&iacute;a
+    		    </div>
+  			      			    	<div id="tab-map" class="tab map fade link sans active">
+                <i class="icon icon-map-8"></i> Mapa
+    			   </div>
+  			      	    	</div>
+	      
+	      
+	        </header>
+			  	<section id="tools" class="tools clearfix">
+      <div class="row1 clearfix">
+              <div class="refine">
+          <div class="clear hidden" href="#">Limpiar filtros</div>
+          <div id="refine-trigger" class="link sans trigger">
+            <span>Leyenda &amp; Filtrar</span>
+            <i class="icon icon-chevron-down"></i>
+          </div>
+          <div id="refine-menu" class="menu">
+            <div class="columns clearfix">
+              <div class="heading sans">Seleccione para a&ntilde;adir o eliminar categor&iacute;as:</div>
+                                                                          
+                        <div id="themes" class="level1-container">
+                                                                                    <div id="teq257EA7EE15099EB2A" class="theme filter level1 fade theme-teq257EA7EE15099EB2A">
+                                <i class="circle"></i> Alojamiento
+                              </div>
+                                                                                                                <div id="teqB2D2F346A5C0D4ACA" class="theme filter level1 fade theme-teqB2D2F346A5C0D4ACA">
+                                <i class="circle"></i> Oportunidades Para Acci&oacute;n
+                              </div>
+                                                                                                                <div id="teq4CB8E657ACEFDB745" class="theme filter level1 fade theme-teq4CB8E657ACEFDB745">
+                                <i class="circle"></i> Festival o Fiesta
+                              </div>
+                                                                                                                <div id="teqE541F1BFF1D61B5F4" class="theme filter level1 fade theme-teqE541F1BFF1D61B5F4">
+                                <i class="circle"></i> Comida o Bebida
+                              </div>
+                                                                                                                <div id="teqDCF7D50BA2A2D9100" class="theme filter level1 fade theme-teqDCF7D50BA2A2D9100">
+                                <i class="circle"></i> Salud y Bienestar
+                              </div>
+                                                                                                                <div id="teqC98D5566F0216A384" class="theme filter level1 fade theme-teqC98D5566F0216A384">
+                                <i class="circle"></i> Aventuras Rurales
+                              </div>
+                                                                                                                <div id="teq62939D94B6FD2D3D4" class="theme filter level1 fade theme-teq62939D94B6FD2D3D4">
+                                <i class="circle"></i> Punto de Inter&eacute;s Local
+                              </div>
+                                                                                                                <div id="teqA58B7EAF81467D537" class="theme filter level1 fade theme-teqA58B7EAF81467D537">
+                                <i class="circle"></i> Museo, Teatro, Centro de Interpretaci&oacute;n
+                              </div>
+                                                                                                                <div id="teq811B9D688FC6C4A01" class="theme filter level1 fade theme-teq811B9D688FC6C4A01">
+                                <i class="circle"></i> &Aacute;rea Natural
+                              </div>
+                                                                                                                <div id="teqF7F45EE232E834CF3" class="theme filter level1 fade theme-teqF7F45EE232E834CF3">
+                                <i class="circle"></i> Cultura del Tequila
+                              </div>
+                                                                                                                <div id="teqDC6AEB3B296C02505" class="theme filter level1 fade theme-teqDC6AEB3B296C02505">
+                                <i class="circle"></i> Comunidad
+                              </div>
+                                                                                                                <div id="teq490D44032BA36409D" class="theme filter level1 fade theme-teq490D44032BA36409D">
+                                <i class="circle"></i> Sitio Hist&oacute;rico o Prehisp&aacute;nico
+                              </div>
+                                                                                                                <div id="teq42397B522D9A05520" class="theme filter level1 fade theme-teq42397B522D9A05520">
+                                <i class="circle"></i> Operador Tur&iacute;stico
+                              </div>
+                                                                              </div>
+                        <div id="types" class="level2-container">
+                                                      <div id="teq257EA7EE15099EB2A" class="type-group" style="display: none;">
+                                                              <div id="teqA7C571269647C5299" class="type filter level2 fade theme-teq257EA7EE15099EB2A">
+                                  <i class="circle"></i> Campamento
+                                </div>
+                                                              <div id="teq31DB71B907BA660DB" class="type filter level2 fade theme-teq257EA7EE15099EB2A">
+                                  <i class="circle"></i> Hostal
+                                </div>
+                                                              <div id="teqD3F63319C42CA9FDC" class="type filter level2 fade theme-teq257EA7EE15099EB2A">
+                                  <i class="circle"></i> Hotel
+                                </div>
+                                                          </div>
+                                                      <div id="teqB2D2F346A5C0D4ACA" class="type-group" style="display: none;">
+                                                              <div id="teq7E6CF2B07056E353D" class="type filter level2 fade theme-teqB2D2F346A5C0D4ACA">
+                                  <i class="circle"></i> Oportunidades de voluntariado o de investigaci&oacute;n
+                                </div>
+                                                              <div id="teq91F89AAB2CA32D0A4" class="type filter level2 fade theme-teqB2D2F346A5C0D4ACA">
+                                  <i class="circle"></i> Organizaci&oacute;n
+                                </div>
+                                                          </div>
+                                                      <div id="teq4CB8E657ACEFDB745" class="type-group" style="display: none;">
+                                                              <div id="teq08F01A666191CA3EA" class="type filter level2 fade theme-teq4CB8E657ACEFDB745">
+                                  <i class="circle"></i> Acontecimiento religioso o celebraci&oacute;n
+                                </div>
+                                                              <div id="teq8400191D81F3212F8" class="type filter level2 fade theme-teq4CB8E657ACEFDB745">
+                                  <i class="circle"></i> Competencia o evento deportivo
+                                </div>
+                                                              <div id="teqC83E99AE8EEE8B40E" class="type filter level2 fade theme-teq4CB8E657ACEFDB745">
+                                  <i class="circle"></i> Eventos de m&uacute;sica en vivo o teatro
+                                </div>
+                                                              <div id="teq311ED9DC1E0E3F166" class="type filter level2 fade theme-teq4CB8E657ACEFDB745">
+                                  <i class="circle"></i> Fiestas y Festivales
+                                </div>
+                                                          </div>
+                                                      <div id="teqE541F1BFF1D61B5F4" class="type-group" style="display: none;">
+                                                              <div id="teq7A9651551868FF108" class="type filter level2 fade theme-teqE541F1BFF1D61B5F4">
+                                  <i class="circle"></i> Bar
+                                </div>
+                                                              <div id="teq1DFB46917F8D7AC18" class="type filter level2 fade theme-teqE541F1BFF1D61B5F4">
+                                  <i class="circle"></i> Casa del caf&eacute;
+                                </div>
+                                                              <div id="teq6D2092A91DC2D7C3D" class="type filter level2 fade theme-teqE541F1BFF1D61B5F4">
+                                  <i class="circle"></i> Mercado
+                                </div>
+                                                              <div id="teq06E01FE7E7BA4B4FB" class="type filter level2 fade theme-teqE541F1BFF1D61B5F4">
+                                  <i class="circle"></i> Puesto de comida
+                                </div>
+                                                              <div id="teq55F1783949BB70807" class="type filter level2 fade theme-teqE541F1BFF1D61B5F4">
+                                  <i class="circle"></i> Restaurante
+                                </div>
+                                                          </div>
+                                                      <div id="teqDCF7D50BA2A2D9100" class="type-group" style="display: none;">
+                                                              <div id="teqA86C0CF3612D70C93" class="type filter level2 fade theme-teqDCF7D50BA2A2D9100">
+                                  <i class="circle"></i> Centros deportivos y gimnasios
+                                </div>
+                                                              <div id="teq85882C5091546A422" class="type filter level2 fade theme-teqDCF7D50BA2A2D9100">
+                                  <i class="circle"></i> Spa
+                                </div>
+                                                          </div>
+                                                      <div id="teqC98D5566F0216A384" class="type-group" style="display: none;">
+                                                              <div id="teq53A3681E262C01C8F" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> &Aacute;rea de turismo VTT
+                                </div>
+                                                              <div id="teqED611EFEC878BC00D" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Agroturismo
+                                </div>
+                                                              <div id="teq48569B5036D2B5F4A" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Equitaci&oacute;n
+                                </div>
+                                                              <div id="teq0C197AA15EEC11EF6" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Excursi&oacute;n a pie
+                                </div>
+                                                              <div id="teqC65A9C7FC69AC5D06" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Gu&iacute;a o outfitter
+                                </div>
+                                                              <div id="teqF71CB42D92AC1ABEC" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Mirador
+                                </div>
+                                                              <div id="teqAC87463F613D1C65D" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Observaci&oacute;n de aves y vida silvestre 
+                                </div>
+                                                              <div id="teq8F842408549CF4EE9" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Ruta ciclista
+                                </div>
+                                                              <div id="teq4EBE803035544BB32" class="type filter level2 fade theme-teqC98D5566F0216A384">
+                                  <i class="circle"></i> Sendero 
+                                </div>
+                                                          </div>
+                                                      <div id="teq62939D94B6FD2D3D4" class="type-group" style="display: none;">
+                                                              <div id="teq1A53C2166697360FD" class="type filter level2 fade theme-teq62939D94B6FD2D3D4">
+                                  <i class="circle"></i> Estatua o exhibici&oacute;n de arte p&uacute;blico
+                                </div>
+                                                              <div id="teq5511F7173854C749D" class="type filter level2 fade theme-teq62939D94B6FD2D3D4">
+                                  <i class="circle"></i> Estructura religiosa
+                                </div>
+                                                              <div id="teq5109113BE48DA29E1" class="type filter level2 fade theme-teq62939D94B6FD2D3D4">
+                                  <i class="circle"></i> Tienda aut&eacute;ntica
+                                </div>
+                                                          </div>
+                                                      <div id="teqA58B7EAF81467D537" class="type-group" style="display: none;">
+                                                              <div id="teq0026EB5B9431C28A7" class="type filter level2 fade theme-teqA58B7EAF81467D537">
+                                  <i class="circle"></i> Centro de interpretaci&oacute;n
+                                </div>
+                                                              <div id="teqC2B224F368AB6799A" class="type filter level2 fade theme-teqA58B7EAF81467D537">
+                                  <i class="circle"></i> Centro de naturaleza y de vida silvestre
+                                </div>
+                                                              <div id="teq70E50F623B68999BA" class="type filter level2 fade theme-teqA58B7EAF81467D537">
+                                  <i class="circle"></i> Galer&iacute;a de arte o studio
+                                </div>
+                                                              <div id="teqA9169CCA0DB453DC0" class="type filter level2 fade theme-teqA58B7EAF81467D537">
+                                  <i class="circle"></i> Museo
+                                </div>
+                                                              <div id="teq95D9F2A53158A35B1" class="type filter level2 fade theme-teqA58B7EAF81467D537">
+                                  <i class="circle"></i> Sal&oacute;n de eventos y reuniones
+                                </div>
+                                                              <div id="teq3F56709D6A9D6C58E" class="type filter level2 fade theme-teqA58B7EAF81467D537">
+                                  <i class="circle"></i> Teatro
+                                </div>
+                                                          </div>
+                                                      <div id="teq811B9D688FC6C4A01" class="type-group" style="display: none;">
+                                                              <div id="teq723490ED047094806" class="type filter level2 fade theme-teq811B9D688FC6C4A01">
+                                  <i class="circle"></i> &Aacute;rea protegida
+                                </div>
+                                                              <div id="teq59ADD8CC96D23DA45" class="type filter level2 fade theme-teq811B9D688FC6C4A01">
+                                  <i class="circle"></i> Caracter&iacute;stica geol&oacute;gica
+                                </div>
+                                                              <div id="teq887BE387DE2700F71" class="type filter level2 fade theme-teq811B9D688FC6C4A01">
+                                  <i class="circle"></i> Fuente termal
+                                </div>
+                                                              <div id="teq82C93BEBCA258644E" class="type filter level2 fade theme-teq811B9D688FC6C4A01">
+                                  <i class="circle"></i> Jard&iacute;n o arboretum
+                                </div>
+                                                              <div id="teq47EDEBE9010DCE584" class="type filter level2 fade theme-teq811B9D688FC6C4A01">
+                                  <i class="circle"></i> Lago, r&iacute;o o cascada
+                                </div>
+                                                              <div id="teqD4C427158C7BD4828" class="type filter level2 fade theme-teq811B9D688FC6C4A01">
+                                  <i class="circle"></i> Parque, plaza o paseo
+                                </div>
+                                                          </div>
+                                                      <div id="teqF7F45EE232E834CF3" class="type-group" style="display: none;">
+                                                              <div id="teqB6AA89C95996B84F7" class="type filter level2 fade theme-teqF7F45EE232E834CF3">
+                                  <i class="circle"></i> Destiler&iacute;a
+                                </div>
+                                                              <div id="teq9C2DFDE2B284CD492" class="type filter level2 fade theme-teqF7F45EE232E834CF3">
+                                  <i class="circle"></i> Museo o centro de interpretaci&oacute;n
+                                </div>
+                                                              <div id="teq43795EAFDE3F0BD4B" class="type filter level2 fade theme-teqF7F45EE232E834CF3">
+                                  <i class="circle"></i> Sala de degustaci&oacute;n
+                                </div>
+                                                          </div>
+                                                      <div id="teqDC6AEB3B296C02505" class="type-group" style="display: none;">
+                                                              <div id="teq3C66482931403B5A3" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Artesanos y m&uacute;sicos locales
+                                </div>
+                                                              <div id="teq2354D1A26B7EF3FD9" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Barrio
+                                </div>
+                                                              <div id="teq9F97749B22DF17811" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Centros religiosos
+                                </div>
+                                                              <div id="teq08B0AE3FB9D5184AB" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Comunidad ind&iacute;gena
+                                </div>
+                                                              <div id="teq8E40098BC2B2F9A72" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Distrito cultural
+                                </div>
+                                                              <div id="teq0FD00CF475831A6D6" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Pueblo o ciudad
+                                </div>
+                                                              <div id="teq1E4A168C872DD0BB0" class="type filter level2 fade theme-teqDC6AEB3B296C02505">
+                                  <i class="circle"></i> Sitio o centro hist&oacute;rico
+                                </div>
+                                                          </div>
+                                                      <div id="teq490D44032BA36409D" class="type-group" style="display: none;">
+                                                              <div id="teq2D34EC1AFB7461876" class="type filter level2 fade theme-teq490D44032BA36409D">
+                                  <i class="circle"></i> Cementerio
+                                </div>
+                                                              <div id="teqC4CE81F92F4425D21" class="type filter level2 fade theme-teq490D44032BA36409D">
+                                  <i class="circle"></i> Sitio arqueol&oacute;gico
+                                </div>
+                                                              <div id="teq195C909F902D7DF12" class="type filter level2 fade theme-teq490D44032BA36409D">
+                                  <i class="circle"></i> Sitio hist&oacute;rico
+                                </div>
+                                                          </div>
+                                                      <div id="teq42397B522D9A05520" class="type-group" style="display: none;">
+                                                              <div id="teq4E023669479AC860F" class="type filter level2 fade theme-teq42397B522D9A05520">
+                                  <i class="circle"></i> Agencias de viajes
+                                </div>
+                                                              <div id="teqA98DC7DCAFD16BC6E" class="type filter level2 fade theme-teq42397B522D9A05520">
+                                  <i class="circle"></i> Autob&uacute;s tur&iacute;stico
+                                </div>
+                                                              <div id="teqB6CB256A59C61DA79" class="type filter level2 fade theme-teq42397B522D9A05520">
+                                  <i class="circle"></i> Gu&iacute;as
+                                </div>
+                                                              <div id="teq961416AD0B363CD71" class="type filter level2 fade theme-teq42397B522D9A05520">
+                                  <i class="circle"></i> Recorrido pintoresco
+                                </div>
+                                                              <div id="teq354395C8FF74FEDD2" class="type filter level2 fade theme-teq42397B522D9A05520">
+                                  <i class="circle"></i> Taxi o limusina servicio
+                                </div>
+                                                          </div>
+                                                  </div>
+                      
+                      
+                                              </div>
+            <div class="action clearfix">
+              <div id="update-filters" class="button sans fade left"><i class="icon-sync"></i> Actualizar</div>
+            </div>
+          </div>
+        </div>
+                    <div class="orderby" style="display:none;">
+          <div id="orderby-trigger" class="link sans trigger">Clasificar por <i class="icon icon-chevron-down"></i></div>
+          <div id="orderby-menu" class="menu">
+            <div id="orders" class="columns clearfix">
+              <div id="latest" class="order filter filter-default fade active default"><i class="triangle"></i> M&aacute;s nuevo</div>
+              <div id="popularity" class="order filter fade"><i class="triangle"></i> M&aacute;s popular</div>
+              <div id="relevance" class="order filter fade hidden"><i class="triangle"></i> M&aacute;s relevante</div>
+              <div id="place-distance" class="order filter fade hidden"><i class="triangle"></i> Distancia del lugar</div>
+            </div>
+            <div class="action clearfix">
+              <div id="update-order" class="button sans fade left"><i class="icon-sync"></i> Actualizar</div>
+            </div>
+          </div>
+        </div>
+                  <div id="share" class="icon icon-share link"></div>
+      <div id="reset-button" class="reset-button link sans">Reiniciar</div>
+              <div class="search-tools">
+          <div class="keyword">
+            <input type="text" id="keyword-search" name="keyword-search" placeholder="Buscar por palabra clave..." tabindex="1" value="" />
+            <a class="submit" href="#keyword"><i class="icon icon-search"></i></a>
+          </div>
+          <div class="place">
+            <input type="text" id="place-search" name="place-search" placeholder="Buscar un lugar..." tabindex="2" value="" />
+            <a class="submit" href="#place"><i class="icon icon-magnifier-7"></i></a>
+            <input type="hidden" id="loc" name="loc" value="" />
+          </div>
+        </div>
+          </div>
+      </section>
+				    <section id="gallery" class="entries gallery">
+      
+      <div class="grid">
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/restaurante-bar-la-jima/teq353ea46d159aa72f6">
+                  <img id="teqBB82F1A63CA8117DD" src="https://natgeotourism.com/images/explicit/325-200/teqBB82F1A63CA8117DD.png" alt="Restaurante Bar  La Jima" />
+                </a>
+              </div>
+                              <div class="featured header-bg sans">Destacado</div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/restaurante-bar-la-jima/teq353ea46d159aa72f6">
+                                        <div class="type-theme ellipsis sans">Comida o Bebida: Restaurante</div>
+                                      <div class="entry-title">Restaurante Bar  La Jima</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq353EA46D159AA72F6" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/restaurante-bar-la-jima/teq353ea46d159aa72f6"><i></i> Restaurante Bar  La Jima</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/experiencia-sauza-regular/teq7318d713776c7d165">
+                  <img id="teqE199F2776A0EEB311" src="https://natgeotourism.com/images/explicit/325-200/teqE199F2776A0EEB311.jpg" alt="Experiencia Sauza Regular" />
+                </a>
+              </div>
+                              <div class="featured header-bg sans">Destacado</div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/experiencia-sauza-regular/teq7318d713776c7d165">
+                                        <div class="type-theme ellipsis sans">Cultura del Tequila: Destiler&iacute;a</div>
+                                      <div class="entry-title">Experiencia Sauza Regular</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq7318D713776C7D165" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/experiencia-sauza-regular/teq7318d713776c7d165"><i></i> Experiencia Sauza Regular</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry last">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/experiencia-sauza-paquetes-empresariales/teq1697f4be47ffa0be7">
+                  <img id="teqF9DD4856EDDC9D644" src="https://natgeotourism.com/images/explicit/325-200/teqF9DD4856EDDC9D644.jpg" alt="Experiencia Sauza Paquetes Empresariales" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/experiencia-sauza-paquetes-empresariales/teq1697f4be47ffa0be7">
+                                        <div class="type-theme ellipsis sans">Cultura del Tequila: Destiler&iacute;a</div>
+                                      <div class="entry-title">Experiencia Sauza Paquetes Empresariales</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq1697F4BE47FFA0BE7" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/experiencia-sauza-paquetes-empresariales/teq1697f4be47ffa0be7"><i></i> Experiencia Sauza Paquetes Empresariales</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/tequila-flying-experience/teq1af87824581548eaa">
+                  <img id="teqA5A73943D3139C039" src="https://natgeotourism.com/images/explicit/325-200/teqA5A73943D3139C039.jpg" alt="TEQUILA FLYING EXPERIENCE" />
+                </a>
+              </div>
+                              <div class="featured header-bg sans">Destacado</div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/tequila-flying-experience/teq1af87824581548eaa">
+                                        <div class="type-theme ellipsis sans">Aventuras Rurales: Gu&iacute;a o outfitter</div>
+                                      <div class="entry-title">TEQUILA FLYING EXPERIENCE</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq1AF87824581548EAA" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/tequila-flying-experience/teq1af87824581548eaa"><i></i> TEQUILA FLYING EXPERIENCE</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/ruta-en-bicicleta-por-el-paisaje-agavero/teq7748f4f43a43a81e6">
+                  <img id="teq4F2EFB3DB8D7EADC9" src="https://natgeotourism.com/images/explicit/325-200/teq4F2EFB3DB8D7EADC9.jpg" alt="Ruta en bicicleta por el paisaje agavero" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/ruta-en-bicicleta-por-el-paisaje-agavero/teq7748f4f43a43a81e6">
+                                        <div class="type-theme ellipsis sans">Aventuras Rurales: Ruta ciclista</div>
+                                      <div class="entry-title">Ruta en bicicleta por el paisaje agavero</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq7748F4F43A43A81E6" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/ruta-en-bicicleta-por-el-paisaje-agavero/teq7748f4f43a43a81e6"><i></i> Ruta en bicicleta por el paisaje agavero</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry last">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/visita-la-cascada-quot-los-azules-quot/teq4c3284338edddd7cb">
+                  <img id="teqECEBAF969EF609342" src="https://natgeotourism.com/images/explicit/325-200/teqECEBAF969EF609342.jpg" alt="Visita la cascada &quot;Los Azules&quot;" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/visita-la-cascada-quot-los-azules-quot/teq4c3284338edddd7cb">
+                                        <div class="type-theme ellipsis sans">Aventuras Rurales: Excursi&oacute;n a pie</div>
+                                      <div class="entry-title">Visita la cascada "Los Azules"</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq4C3284338EDDDD7CB" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/visita-la-cascada-quot-los-azules-quot/teq4c3284338edddd7cb"><i></i> Visita la cascada "Los Azules"</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/una-aventura-a-rapel-en-los-azules/teq92b59c349476eba15">
+                  <img id="teqBAA45BEBC144E98AD" src="https://natgeotourism.com/images/explicit/325-200/teqBAA45BEBC144E98AD.jpg" alt="Una aventura a rapel en los azules" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/una-aventura-a-rapel-en-los-azules/teq92b59c349476eba15">
+                                        <div class="type-theme ellipsis sans">Aventuras Rurales: Excursi&oacute;n a pie</div>
+                                      <div class="entry-title">Una aventura a rapel en los azules</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq92B59C349476EBA15" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/una-aventura-a-rapel-en-los-azules/teq92b59c349476eba15"><i></i> Una aventura a rapel en los azules</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/hotel-los-abolengos-grand-class-casona/teq653593dc63a5b4a6c">
+                  <img id="teqEADABE1590C47A9EF" src="https://natgeotourism.com/images/explicit/325-200/teqEADABE1590C47A9EF.png" alt="Hotel Los Abolengos Grand Class Casona" />
+                </a>
+              </div>
+                              <div class="featured header-bg sans">Destacado</div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/hotel-los-abolengos-grand-class-casona/teq653593dc63a5b4a6c">
+                                        <div class="type-theme ellipsis sans">Alojamiento: Hotel</div>
+                                      <div class="entry-title">Hotel Los Abolengos Grand Class Casona</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq653593DC63A5B4A6C" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/hotel-los-abolengos-grand-class-casona/teq653593dc63a5b4a6c"><i></i> Hotel Los Abolengos Grand Class Casona</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry last">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/spa-allevia/teq22357256129754055">
+                  <img id="teq2948865144416196D" src="https://natgeotourism.com/images/explicit/325-200/teq2948865144416196D.jpg" alt="Spa Allevia" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/spa-allevia/teq22357256129754055">
+                                        <div class="type-theme ellipsis sans">Salud y Bienestar: Spa</div>
+                                      <div class="entry-title">Spa Allevia</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq22357256129754055" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/spa-allevia/teq22357256129754055"><i></i> Spa Allevia</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/restaurante-defranca/teq328b30c261909bb15">
+                  <img id="teq72FD9589C566DFC1F" src="https://natgeotourism.com/images/explicit/325-200/teq72FD9589C566DFC1F.jpg" alt="Restaurante Defranca" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/restaurante-defranca/teq328b30c261909bb15">
+                                        <div class="type-theme ellipsis sans">Comida o Bebida: Restaurante</div>
+                                      <div class="entry-title">Restaurante Defranca</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq328B30C261909BB15" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/restaurante-defranca/teq328b30c261909bb15"><i></i> Restaurante Defranca</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/hotel-boutique-defranca/teq7d376b0389a5586d7">
+                  <img id="teqD77FD61CFFAF04C7C" src="https://natgeotourism.com/images/explicit/325-200/teqD77FD61CFFAF04C7C.jpg" alt="Hotel Boutique Defranca" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/hotel-boutique-defranca/teq7d376b0389a5586d7">
+                                        <div class="type-theme ellipsis sans">Alojamiento: Hotel</div>
+                                      <div class="entry-title">Hotel Boutique Defranca</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq7D376B0389A5586D7" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/hotel-boutique-defranca/teq7d376b0389a5586d7"><i></i> Hotel Boutique Defranca</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry last">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/fonda-chivo-y-vaca/teq3b8ecf45171aa6fcd">
+                  <img id="teq04D7191BDE2D65DD9" src="https://natgeotourism.com/images/explicit/325-200/teq04D7191BDE2D65DD9.jpg" alt="Fonda Chivo y Vaca" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/fonda-chivo-y-vaca/teq3b8ecf45171aa6fcd">
+                                        <div class="type-theme ellipsis sans">Comida o Bebida: Restaurante</div>
+                                      <div class="entry-title">Fonda Chivo y Vaca</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq3B8ECF45171AA6FCD" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/fonda-chivo-y-vaca/teq3b8ecf45171aa6fcd"><i></i> Fonda Chivo y Vaca</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/papel-de-agave-fibraz/teqedb0d48b97aa07ac4">
+                  <img id="teqAB90D71F9A9119F62" src="https://natgeotourism.com/images/explicit/325-200/teqAB90D71F9A9119F62.jpg" alt="Papel de Agave Fibraz" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/papel-de-agave-fibraz/teqedb0d48b97aa07ac4">
+                                        <div class="type-theme ellipsis sans">Comunidad: Artesanos y m&uacute;sicos locales</div>
+                                      <div class="entry-title">Papel de Agave Fibraz</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teqEDB0D48B97AA07AC4" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/papel-de-agave-fibraz/teqedb0d48b97aa07ac4"><i></i> Papel de Agave Fibraz</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/agave-season-experiencias-ecuestres/teqfe772473c649416e9">
+                  <img id="teq2EFDBEDEFB78B220C" src="https://natgeotourism.com/images/explicit/325-200/teq2EFDBEDEFB78B220C.jpg" alt="Agave Season, Experiencias Ecuestres" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/agave-season-experiencias-ecuestres/teqfe772473c649416e9">
+                                        <div class="type-theme ellipsis sans">Aventuras Rurales: Equitaci&oacute;n</div>
+                                      <div class="entry-title">Agave Season, Experiencias Ecuestres</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teqFE772473C649416E9" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/agave-season-experiencias-ecuestres/teqfe772473c649416e9"><i></i> Agave Season, Experiencias Ecuestres</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry last">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/d-iacute-a-de-muertos/teqf02617f4c3123f3ee">
+                  <img id="teq1961FA38F9AC033C2" src="https://natgeotourism.com/images/explicit/325-200/teq1961FA38F9AC033C2.jpg" alt="D&iacute;a de Muertos" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/d-iacute-a-de-muertos/teqf02617f4c3123f3ee">
+                                        <div class="type-theme ellipsis sans">Festival o Fiesta: Acontecimiento religioso o celebraci&oacute;n</div>
+                                      <div class="entry-title">Día de Muertos</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teqF02617F4C3123F3EE" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/d-iacute-a-de-muertos/teqf02617f4c3123f3ee"><i></i> Día de Muertos</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/hotel-casa-dulce-mar-iacute-a/teqc7eaef5225dd8a1b1">
+                  <img id="teq043A7C09C06172EC5" src="https://natgeotourism.com/images/explicit/325-200/teq043A7C09C06172EC5.jpg" alt="Hotel Casa Dulce Mar&iacute;a" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/hotel-casa-dulce-mar-iacute-a/teqc7eaef5225dd8a1b1">
+                                        <div class="type-theme ellipsis sans">Alojamiento: Hotel</div>
+                                      <div class="entry-title">Hotel Casa Dulce María</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teqC7EAEF5225DD8A1B1" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/hotel-casa-dulce-mar-iacute-a/teqc7eaef5225dd8a1b1"><i></i> Hotel Casa Dulce María</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/museo-nacional-del-tequila/teq87b419e37931e0413">
+                  <img id="teq942B2B6B798CB2370" src="https://natgeotourism.com/images/explicit/325-200/teq942B2B6B798CB2370.jpg" alt="Museo Nacional del Tequila" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/museo-nacional-del-tequila/teq87b419e37931e0413">
+                                        <div class="type-theme ellipsis sans">Museo, Teatro, Centro de Interpretaci&oacute;n: Museo</div>
+                                      <div class="entry-title">Museo Nacional del Tequila</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teq87B419E37931E0413" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/museo-nacional-del-tequila/teq87b419e37931e0413"><i></i> Museo Nacional del Tequila</a>
+            </div>
+          </div>
+                  <div class="col-1-3 entry last">
+            <div class="inner hoverFade">
+              <div class="image">
+                <a href="/content/presidencia-municipal-de-tequila/teqd29e4defc0187f1a6">
+                  <img id="teqC5C50BA30674F7E2D" src="https://natgeotourism.com/images/explicit/325-200/teqC5C50BA30674F7E2D.jpg" alt="Presidencia Municipal de Tequila" />
+                </a>
+              </div>
+                            <div class="overlay fade">
+                <a class="meta-container" href="/content/presidencia-municipal-de-tequila/teqd29e4defc0187f1a6">
+                                        <div class="type-theme ellipsis sans">Sitio Hist&oacute;rico o Prehisp&aacute;nico: Sitio hist&oacute;rico</div>
+                                      <div class="entry-title">Presidencia Municipal de Tequila</div>
+                </a>
+                                  <div class="action-container">
+                                            <span class="add-idea idea-action fade sans" data-id="teqD29E4DEFC0187F1A6" data-context="page">
+                          <i class="icon icon-tripidea-add"></i> Agregar a mis ideas de viaje
+                        </span>
+                                        </div>
+                              </div>
+              <div class="check"></div>
+                                                      </div>
+            <div class="meta">
+              <a class="title" href="/content/presidencia-municipal-de-tequila/teqd29e4defc0187f1a6"><i></i> Presidencia Municipal de Tequila</a>
+            </div>
+          </div>
+                <span class="total">109</span>
+      </div>
+      <div id="showmore" class="showmore spinner"></div>
+              <div id="more" class="more" data-max="7" data-limit="18" data-page="1">
+          <div class="more-button">
+            <span class="fade">Ver m&aacute;s</span>
+            <i class="icon fade icon-chevron-down"></i>
+          </div>
+        </div>
+          
+    
+    </section>
+				  <section id="map" class="geo entries active" data-group="" data-theme="" data-backpack="">
+  <div class="map-tools">
+	  	      			<div id="toggle-map-goto" class="button first fade" data-panel="goto">
+  				<div class="icon icon-target"></div><div title="Ir a" class="label ellipsis sans">Ir a</div>
+  			</div>
+	    								<div id="toggle-map-layers" class="button second fade" data-panel="layers">
+						<div class="icon icon-buffer"></div><div title="Capas" class="label ellipsis sans">Capas</div>
+					</div>
+					    </div>
+  <div class="map-container">
+    <div id="map-loading" class="spinner"></div>
+		<div id="esri-map"></div>
+  </div>
+    <div class="panels">
+	  	      	    <div id="goto" class="panel">
+  				<div class="item all fade active"><i class="triangle"></i> Mapa completo</div>
+  				<div class="close fade icon-remove-delete"></div>
+  			</div>
+	    			<div id="regions" class="panel">
+				<div class="item all fade active"><i class="triangle"></i> Mapa completo</div>
+				<div class="close fade icon-remove-delete"></div>
+			</div>
+	  		<div id="layers" class="panel">
+			<div class="close fade icon-remove-delete"></div>
+		</div>
+  </div>
+		  <div class="location-overlay">
+			<div class="icon globe" style="background-position: -75px 0px">
+				<i class="icon pin icon-map-marker-1" style="top: 9px; left: 13px;"></i>
+			</div>
+		</div>
+	</section>
+		  </div>
+</div>
+			<div class="footer-push clearfix"></div>
+		</div>
+		<div class="footer-container footer-bg sans clearfix">
+      <footer class="wrapper clearfix">
+				<div class="columns clearfix">
+		      <div class="col-1-4 column col1">
+			      							<h3>Contacto</h3>
+							<p>Para mayor información acerca del MapaGuía de Geotourismo Tequila contacte a: <a href="mailto:contacto@tequilaesmex.com">contacto@tequilaesmex.com</a></p>
+<p> </p>			      		      </div>
+		      <div class="col-1-4 column col2">
+			      		      </div>
+		      <div class="col-1-4 column col3">
+																				      </div>
+	      	<div class="col-1-4 column col4">
+		      	<div class="nominate">
+			      				      		  <h3><a href="/user/account"><i class="icon icon-page-add"></i> Nominar un lugar</a></h3>
+			      			<p><a href="/user/account">Registrarse</a> <span class="separator">|</span> <a href="/user/account">Ingresar</a></p>
+			      				      	</div>
+		      	<div class="copyright">
+				      <p>&copy; 2017 Old Town Creative + Interactive. Todos los derechos reservados.</p>
+			      	<p><a href="/supporters">Qui&eacute;nes apoyan el proyecto</a><br />
+				      <a href="/terms">T&eacute;rminos</a>
+				      <span class="separator">|</span>
+				      <a href="/privacy">Pol&iacute;&shy;tica de privacidad</a></p>
+			      </div>
+			      			        <div id="mobile">
+  			        <a rel="nofollow" href="/mobile?uri=%2Fguide">Sitio M&oacute;vil</a>
+  			       </div>
+			      			                    <div id="languages">
+                <span class="spinner light"></span>
+                <form>
+                  <label class="sans">Lengua:</label>
+                  <select id="language-selector" name="language-selector" class="sans">
+                                          <option id="es" selected>Spanish</option>
+                                          <option id="en">English</option>
+                                      </select>
+                </form>
+              </div>
+            		      </div>
+				</div>
+      </footer>
+    </div>
+    		<script src="https://natgeotourism.com/web/common/live/assets/default/js/vendor/velocity.min.js?v=1.7"></script>
+		<script src="https://natgeotourism.com/web/common/live/assets/default/js/vendor/velocity.ui.min.js?v=1.7"></script>
+				<script src="https://natgeotourism.com/web/common/live/assets/default/js/vendor/jquery.fancybox.pack.js?v=1.7"></script>
+		<script src="https://natgeotourism.com/web/common/live/assets/default/js/vendor/jquery.fancybox-media.js?v=1.7"></script>
+						  <script src="https://natgeotourism.com/web/common/live/assets/default/js/min/common.min.js?v=1.7"></script>
+		  
+						    		  <script src="https://natgeotourism.com/web/common/live/assets/default/js/min/index.min.js?v=1.7"></script>
+  		  
+  								  		    <script src="https://natgeotourism.com/web/common/live/assets/default/js/vendor/vex.combined.min.js?v=1.7"></script>
+		  							<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDMO4fr3j3opy95MjvRn9LrTT8Lk1HjShA"></script>
+							<script src="https://js.arcgis.com/3.11/"></script>
+						  <script src="https://natgeotourism.com/web/common/live/assets/default/js/min/map.min.js?v=1.7"></script>
+			  
+									    		    		        		    <script id="primary">
+      			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              ga('create', 'UA-59951938-7', 'auto'); ga('send', 'pageview');      		  </script>
+    		      		    		  		    		    		        		    <script id="natgeotourism">
+      			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                              ga('create', 'UA-59951938-1', 'auto', { 'name': 'natgeotourism' }); ga('natgeotourism.send', 'pageview');
+                
+                    		  </script>
+    		      		    		  		    		    		        		      		    <script id="pixel">
+              !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+              n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+              document,'script','https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '627084867460003');
+              fbq('track', 'PageView');
+            </script>
+            <noscript
+              <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1158586917485405&ev=PageView&noscript=1">
+            </noscript>
+    		    		  		  				  </body>
+</html>
+
